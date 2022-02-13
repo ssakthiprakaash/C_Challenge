@@ -13,7 +13,7 @@ extern int testVar;
 TEST(TestCaseName, TestName) {
   EXPECT_EQ(1, 1);
   EXPECT_TRUE(true);
-  //EXPECT_EQ(success(), 1);
+
 }
 
 TEST(TestCaseName, TestName1) {
