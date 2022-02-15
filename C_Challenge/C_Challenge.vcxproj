@@ -42,6 +42,9 @@
   <ItemGroup>
     <ClInclude Include="inc\success.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\FileForSorting.txt" />
+  </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

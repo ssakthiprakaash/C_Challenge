@@ -9,29 +9,27 @@ extern "C" {
 
 
 extern int testVar;
+extern float sort_Array[10];
+extern int medianIndex;
 
-TEST(TestCaseName, TestName) {
-  EXPECT_EQ(1, 1);
-  EXPECT_TRUE(true);
-  //branch15.02.2022
+TEST(Rangecheck, validrange) {
+	sort_Array[10];
+	sort();
+	EXPECT_EQ(sort(), 0);
+
 }
 
-TEST(TestCaseName, TestName1) {
-	int var;
-	EXPECT_EQ(1, 1);
-	EXPECT_TRUE(true);
-	testVar = 5;
-	var = success();
-	EXPECT_EQ(var, testVar);
+/*TEST(Rangecheck, Invalidrange) {
+	sort();
+	EXPECT_EQ(sort(), 1);
+
+}*/
+
+TEST(MedianCheck, validMedianIndex) {
+	sort();
+	EXPECT_EQ(medianIndex, 5);
+
 }
 
 
-TEST(TestCaseName, TestName2) {
-	int var;
-	EXPECT_EQ(1, 1);
-	EXPECT_TRUE(true);
-	testVar = 7;
-	var = success();
-	EXPECT_EQ(var, 8);
-}
 
